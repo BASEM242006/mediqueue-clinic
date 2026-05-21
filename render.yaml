@@ -1,0 +1,19 @@
+# Optional: deploy on Render.com (free tier) — connect GitHub repo in Render dashboard
+services:
+  - type: web
+    name: mediqueue-clinic
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx prisma generate && npx prisma db push && npm run db:seed && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NEXT_PUBLIC_API_URL
+        value: ""
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false
