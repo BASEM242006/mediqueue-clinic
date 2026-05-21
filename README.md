@@ -91,6 +91,16 @@ Use any 6-digit OTP in development (actual code is logged by the API).
 4. Patient tracks at `/patient/queue/[appointmentId]` without refreshing
 5. Clinic TV at `/display?doctorId=...&branchId=...`
 
+## Deploy (fixed link)
+
+**One-click Vercel (permanent URL):**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/BASEM242006/mediqueue-clinic)
+
+See [DEPLOY-ONE-CLICK.md](./DEPLOY-ONE-CLICK.md) for Arabic instructions and environment variables.
+
+**GitHub:** https://github.com/BASEM242006/mediqueue-clinic
+
 ## License
 
 Private / project use.
